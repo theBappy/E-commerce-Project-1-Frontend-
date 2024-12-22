@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // Set your base URL for the API
-const API_URL = 'http://localhost:5000/api/v1/orderpay'; // Update the URL as needed
+const API_URL = 'https://e-commerce-project1-backend.onrender.com/api/v1/orderpay'; 
 
 /**
  * Create a payment intent on the backend

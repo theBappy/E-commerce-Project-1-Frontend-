@@ -5,20 +5,21 @@ export default defineConfig({
   plugins: [react()],
   server: {
     port: 5173,
-    proxy: {
-      '/api/v1': 'http://localhost:5000', // Proxy backend
-    },
     open: true,
     historyApiFallback: true,
   },
+  define: {
+    'process.env.VITE_API_BASE_URL': JSON.stringify('https://e-commerce-project1-backend.onrender.com'),
+  },
   optimizeDeps: {
-    exclude: ['morgan', 'basic-auth', 'safe-buffer'] 
+    exclude: ['morgan', 'basic-auth', 'safe-buffer'],
   },
   build: {
     rollupOptions: {
-      external: ['morgan', 'basic-auth', 'safe-buffer'] 
-    }
-  }
+      external: ['morgan', 'basic-auth', 'safe-buffer'],
+    },
+  },
 });
+
 
 

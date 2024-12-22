@@ -3,7 +3,7 @@ import { loadStripe } from '@stripe/stripe-js';
 import { Elements, CardElement, useStripe, useElements } from '@stripe/react-stripe-js';
 import { createPaymentIntent, processPayment } from '../services/PaymentService';
 
-const stripePromise = loadStripe('pk_test_51QUqZtB9k7mttOuhLwRzabqHgpmLzQTjpgz17KwD8X1WsTGwNfCitkI2doEQm7Lu2oSuel7uyLmaTe6F2HyySl6M00QvxqomsD'); // Replace with your Stripe public key
+const stripePromise = loadStripe(process.env.STRIPE_PUBLISHABLE_KEY);
 
 const StripePayment = () => {
   const stripe = useStripe();

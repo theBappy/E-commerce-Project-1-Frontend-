@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5000/api/v1/auth';
+const API_URL = 'https://e-commerce-project1-backend.onrender.com/api/v1/auth';
 
 export const registerUser = async (userData) => {
   try {

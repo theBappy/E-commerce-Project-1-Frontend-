@@ -8,7 +8,7 @@ const OrderHistory = () => {
   useEffect(() => {
     const fetchOrders = async () => {
       try {
-        const response = await axios.get('/api/v1/order/my-orders');  // Adjust based on your API endpoint
+        const response = await axios.get('https://e-commerce-project1-backend.onrender.com/api/v1/order/my-orders');  // Adjust based on your API endpoint
         setOrders(response.data);
       } catch (error) {
         console.error('Error fetching orders:', error);

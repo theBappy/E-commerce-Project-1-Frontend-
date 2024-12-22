@@ -51,7 +51,7 @@ const Profile = () => {
     formData.append('image', image); // Use the image from state instead of the event
     
     try {
-      const response = await axios.post('http://localhost:5000/api/v1/auth/upload-profile-image', formData, {
+      const response = await axios.post('https://e-commerce-project1-backend.onrender.com/api/v1/auth/upload-profile-image', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
           Authorization: `Bearer ${token}` // Ensure token is available

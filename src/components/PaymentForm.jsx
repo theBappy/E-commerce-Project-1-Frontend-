@@ -30,7 +30,7 @@ const PaymentForm = ({ onPaymentSuccess }) => {
     try {
       const token = getToken();
       const amountInCents = Math.round(totalAmount * 100);
-      const response = await fetch('/api/v1/orderpay/create-intent', {
+      const response = await fetch('https://e-commerce-project1-backend.onrender.com/api/v1/orderpay/create-intent', {
         method: 'POST',
         headers: { 
           'Content-Type': 'application/json',

@@ -13,7 +13,7 @@ const OrderDetails = () => {
   useEffect(() => {
     const fetchOrderDetails = async () => {
       try {
-        const response = await axios.get(`/api/order/${id}`, {
+        const response = await axios.get(`https://e-commerce-project1-backend.onrender.com/api/v1/order/my-orders/${id}`, {
           headers: {
             Authorization: `Bearer ${localStorage.getItem('token')}`,  // Sending JWT token for authentication
           },

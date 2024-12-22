@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = 'http://localhost:5000/api/v1/order/my-orders'; // Base URL for both routes
+const API_BASE_URL = 'https://e-commerce-project1-backend.onrender.com/api/v1/order/my-orders'; 
 
 /**
  * Get all orders for the logged-in user
